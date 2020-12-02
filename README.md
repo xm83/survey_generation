@@ -56,12 +56,36 @@ McKeown and Radev (1995) and Radev and McKeown (1998) are the pioneering work in
 Ganesan et al. (2010) employs a graph-based approach to abstractive summarization of highly redundant opinions.
 
 
+## Neural Methods
 
-## Additional Resources
+**Using Graph Convolutional Network** [[paper](https://www.aclweb.org/anthology/K17-1045/)]
 
--	Semantics for Semantic Parsing [[slides](https://yoavartzi.com/sp14/slides/steedman.sp14.pdf)]
--	Theories of Semantic Representation [[slides](https://www.clsp.jhu.edu/wp-content/uploads/2018/06/2018-06-21-Ellie-Pavlick-JSALT-Summer-School.pdf)]
--	SQL-Based Semantic Parsing [[website](https://medium.com/@tao.yu/awesome-sequence-to-sql-and-semantic-parsing-1d7656861679/)]
--	AllenAI Semantic Parsing Tutorial (ACL 2018) [[website](https://github.com/allenai/acl2018-semantic-parsing-tutorial)]
--	SEMPRE [[website](https://nlp.stanford.edu/software/sempre/)]
--	NLP Progress for Semantic Parsing [[website](https://nlpprogress.com/english/semantic_parsing.html/)]
+Yasunaga et al., 2017 exploits the graph structure among discourse relations in text clusters and uses a graph convolutional network (GCN) on the relation graphs to generate high-level hidden sentence features for salience estimation. The input node features are sentence embeddings from Recurrent Neural Networks (RNNs). It uses a greedy heuristic to extract salient sentences and demonstrates improvement from traditional graph-based extractive approaches as well as the vanilla sequence model (specifically GRU) with no graph.
+
+
+**SDS to MDS** [[paper](https://www.aclweb.org/anthology/K17-1045/)]
+
+Zhang et al. (2018) adds an additional document-level encoding to adapt a hierarchical encoding framework trained on Single-Document Summarization data to Multi-Document Summarization.
+
+
+**SDS to MDS with MMR** [[paper](https://www.aclweb.org/anthology/D18-1446.pdf)]
+
+Lebanoff et al. (2018) introduces an external MMR module that doesn't require training on the MDS, to apply encoder-decoder models trained on SDS data to MDS.
+
+
+## Evaluation
+
+**ROUGE** [[paper](https://www.aclweb.org/anthology/W04-1013.pdf)]
+
+Lin (2004) introduces ROUGE--Recall-Oriented Understudy for Gisting Evaluationm which contains a set of metrics that have become the standards for evaluating summarization tasks. Commonly used ROUGE scores include ROUGE-N, which uses n-gram recall, as well as ROUGE-L, which is based on longest common subsequence. The paper is one of the most cited papers in NLP.
+
+
+**Normalized ROUGE** [[paper](https://www.aclweb.org/anthology/W19-2303/)]
+
+Sun et al. (2019) shows that ROUGE is highly sensitive to summary length, thus giving unfair advantage to methods that produce longer summaries. They propose an alternative metric that normalize ROUGE scores with those from a random system producing summaries of the same length.
+
+
+**Better Correlation with Human Evaluation** [[paper](https://arxiv.org/pdf/1905.13322.pdf)]
+
+Goodrich (2019) proposes an alternative metric that correlates with human evaluation of factual accuracy better.
+
