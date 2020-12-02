@@ -1,7 +1,8 @@
 # AWESOME Bibliography: Survey Generation and Multi-Document Summarization
 
 Papers and Resources for Survey Generation and Multi-Document Summarization in NLP
-Sally Ma
+
+by Sally Ma
 
 
 ## Datasets
@@ -33,7 +34,14 @@ Mihalcea and Tarau (2004) is another graph-based extractive summarization system
 
 Qazvinian and Radev (2008) was a state-of-the-art system that uses a content model based on lexical network (fully connected network of an article, where a node is each sentence in the citation summary of the article, and a weight of an edge is the cosine similarity of pairs of sentences). The system applies lexrank in each cluster of nodes to find the most central sentences to find the most central ones for building the summary.
 
-**HITSUM** [[paper]()]
+**HITSUM** [[paper](https://www.aclweb.org/anthology/P15-1043.pdf)]
+
+Jha et al. (2015) proposes a new formulation of the lexical network to include additional lexical information. The system assigns hub scores (for summarizing important contributions) and authority scores (for reporting important contributions) to each node in a mutually reinforcing way and selects sentences with the highetest hub scores.
+
+
+**Surveyor** [[paper](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.947.5532&rep=rep1&type=pdf)]
+
+Jha et al. (2015) focuses on generating coherent surveys--those with well-defined and ordered subtopics. It combines a content model (modeling subtopics in a scientific paper with Hidden Markov Model) and a discourse model (modeling discourse-level dependencies for locally coherent summaries). It also introduces the idea of Minimum Independent Discourse Contexts (MIDC) of a sentence s(i): the minimum set of sentences preceding it such that s(i) can be interpreted independently of the other sentences in its text segment, in order to produce survey articles substantially more coherent and readable compared with previous work.
 
 
 ## Abstractive Approach
