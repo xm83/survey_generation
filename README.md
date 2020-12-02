@@ -5,7 +5,7 @@ Sally Ma
 
 
 ## Datasets
--	[Multi-News (2019) (https://github.com/tensorflow/datasets/blob/master/tensorflow_datasets/summarization/multi_news.py)
+-	[Multi-News (2019)](https://github.com/tensorflow/datasets/blob/master/tensorflow_datasets/summarization/multi_news.py)
 -	[WikiSum (2019)](https://github.com/nlpyang/hiersumm)
 -	[DUC (2004)](https://duc.nist.gov/pubs/2004slides/duc2004.intro.pdf)
 -	[TAC (2011)](https://tac.nist.gov//2011/Summarization/)
@@ -24,12 +24,17 @@ Carbonell and Goldstein (1998) uses a ranking score (MMR) to produce a ranked li
 Erkan and Radev (2004) turns sentences into vector representations (word embeddings) and calculates similarity matrix of the vectors and convert into graph (sentences as nodes and similarity scores as edges).
 
 
-**Textrank [[paper](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf)]
+**Textrank** [[paper](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf)]
 
 Mihalcea and Tarau (2004) is another graph-based extractive summarization system, similar to Lexrank, that ranks sentences based on centrality (each edge being a vote), and selects the top-ranked sentences as summaries
 
 
-**
+**C-Lexrank** [[paper](http://www-personal.umich.edu/~vahed/papers/citsum.pdf)]
+
+Qazvinian and Radev (2008) was a state-of-the-art system that uses a content model based on lexical network (fully connected network of an article, where a node is each sentence in the citation summary of the article, and a weight of an edge is the cosine similarity of pairs of sentences). The system applies lexrank in each cluster of nodes to find the most central sentences to find the most central ones for building the summary.
+
+**HITSUM** [[paper]()]
+
 
 ## Abstractive Approach
 
