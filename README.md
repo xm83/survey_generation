@@ -119,3 +119,21 @@ Sun et al. (2019) shows that ROUGE is highly sensitive to summary length, thus g
 
 Goodrich (2019) proposes an alternative metric that correlates with human evaluation of factual accuracy better.
 
+
+## Additional Resources
+
+-	Scoring Sentence Singletons and Pairs for Abstractive Summarization [[paper](https://arxiv.org/pdf/1906.00077.pdf)]
+-	Analyzing Sentence Fusion in Abstractive Summarization [[paper](https://arxiv.org/pdf/1910.00203.pdf)]
+-	A Survey on Neural Network-Based Summarization Methods [[paper](https://arxiv.org/pdf/1804.04589.pdf)]
+-	A Curated List of Resources dedicated to Text Summarization [[website](https://github.com/mathsyouth/awesome-text-summarization)]
+-	Modern History for Text Summarization [[website](http://pfliu.com/Historiography/summarization/summ-eng.html)]
+-	Searching for Effective Neural Extractive Summarization: What Works and What’s Next [[paper](https://arxiv.org/pdf/1907.03491.pdf)] [[code](https://github.com/maszhongming/Effective_Extractive_Summarization)]
+- Hierarchical Transformers for Multi-Document Summarization [[paper](https://arxiv.org/pdf/1905.13164.pdf)] [[code](https://github.com/nlpyang/hiersumm)]
+- Automatic Labeling of Topic Models Using Text Summaries [[paper](https://pdfs.semanticscholar.org/4cc4/898e86c4e9d2a87bbb26f18ec6ebb79e9ded.pdf)]
+- Improving the Similarity Measure of Determinantal Point Processes for Extractive Multi-Document Summarization [[paper](https://www.aclweb.org/anthology/P19-1098.pdf)]
+- How to Compare Summarizers without Target Length? Pitfalls, Solutions and Re-Examination of the Neural Summarization Literature [[paper](https://www.cis.upenn.edu/~nenkova/ComparingSummarizersWithoutTargetLength.pdf)]
+
+
+
+
+
