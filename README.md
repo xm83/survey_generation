@@ -8,6 +8,7 @@ by Sally Ma
 ## Datasets
 -	[Multi-News (2019)](https://github.com/tensorflow/datasets/blob/master/tensorflow_datasets/summarization/multi_news.py)
 -	[WikiSum (2019)](https://github.com/nlpyang/hiersumm)
+- [WikiCite (2019)](https://github.com/CogComp/summary-cloze)
 -	[DUC (2004)](https://duc.nist.gov/pubs/2004slides/duc2004.intro.pdf)
 -	[TAC (2011)](https://tac.nist.gov//2011/Summarization/)
 
@@ -44,7 +45,7 @@ Jha et al. (2015) proposes a new formulation of the lexical network to include a
 Jha et al. (2015) focuses on generating coherent surveys--those with well-defined and ordered subtopics. It combines a content model (modeling subtopics in a scientific paper with Hidden Markov Model) and a discourse model (modeling discourse-level dependencies for locally coherent summaries). It also introduces the idea of Minimum Independent Discourse Contexts (MIDC) of a sentence s(i): the minimum set of sentences preceding it such that s(i) can be interpreted independently of the other sentences in its text segment, in order to produce survey articles substantially more coherent and readable compared with previous work.
 
 
-## Abstractive Approach
+## Abstractive / Hybrid Approach
 
 **SUMMONS** [[paper](http://www.cs.columbia.edu/nlp/papers/1995/mckeown_radev_95.pdf)] [[followup paper](https://www.aclweb.org/anthology/J98-3005.pdf)]
 
@@ -54,6 +55,16 @@ McKeown and Radev (1995) and Radev and McKeown (1998) are the pioneering work in
 **Opinosis** [[paper](https://www.aclweb.org/anthology/C10-1039.pdf)]
 
 Ganesan et al. (2010) employs a graph-based approach to abstractive summarization of highly redundant opinions.
+
+
+**WikiWrite** [[paper](https://www.ijcai.org/Proceedings/16/Papers/389.pdf)]
+
+Banerjee and Mitra (2016) proposes a new end-to-end system called WikiWrite that uses abstractive summarization to prevent copyright violations resulting from purely extractive methods, using a word-graph construction approach to generate new sentences. 
+
+
+**Summary Cloze** [[paper](https://www.aclweb.org/anthology/D19-1386/)]
+
+Deutsch and Roth (2019) focuses on the task of content selection (choosing what information to include in the summary), which is a key challenge in topic-focused summarization. It formulates a new method for studying content selection--the summary cloze task, whose goal is to predict the next sentence of a summary (known as the cloze), conditioned on the beginning of the summary, a topic, and reference documents. They approach the task with an extractive model and a two-step abstractive model.
 
 
 ## Neural Methods
@@ -71,6 +82,11 @@ Zhang et al. (2018) adds an additional document-level encoding to adapt a hierar
 **SDS to MDS with MMR** [[paper](https://www.aclweb.org/anthology/D18-1446.pdf)]
 
 Lebanoff et al. (2018) introduces an external MMR module that doesn't require training on the MDS, to apply encoder-decoder models trained on SDS data to MDS.
+
+
+**Perceptron-ILP** [[paper](https://www.aclweb.org/anthology/P09-1024/)]
+
+Sauper and Barzilay (2009) automatically generates Wikipedia articles with a structure-aware approach. It uses template induction for a domain and retrieve from an internet a set of r excerpts for each topic from the template, for each survey. The system learns content selection criteria for all the topics simultaneously to maximize local fit and global coherence. It uses a neural network to learn the optimal parameter vectors for each topic.
 
 
 ## Evaluation
