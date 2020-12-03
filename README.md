@@ -1,4 +1,4 @@
-# AWESOME Bibliography: Survey Generation and Multi-Document Summarization
+# Annotated Bibliography for Survey Generation and Multi-Document Summarization
 
 Papers and Resources for Survey Generation and Multi-Document Summarization in NLP
 
