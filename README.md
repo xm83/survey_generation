@@ -7,10 +7,24 @@ by Sally Ma
 
 ## Datasets
 -	[Multi-News (2019)](https://github.com/tensorflow/datasets/blob/master/tensorflow_datasets/summarization/multi_news.py)
+
+Fabbri et al. (2019) introduces the first large-scale MDS news dataset, containing 56,216 articles-summary pairs. News articles and their summaries, professionally written by editors, are from the site newser.com. The dataset is also diverse, with over 1,500 sites appear as source documents 5 times or greater, as compared with previous news datasets such as DUC and CNNDM (both with 2 sources) as well as the Newsroom dataset (38 sources).
+
 -	[WikiSum (2019)](https://github.com/nlpyang/hiersumm)
+
+Liu et al. (2019) contributes a collection of over 1.5 millions Wikipedia pages (~300 GB). They crawled Wikipedia articles and 78.9% of source reference documents (excluded invalid urls). On average, a data instance has 525 paragraphs, and a target summary has 139.4 tokens. A ranked version (for reduced size) is available with top 40 source paragraphs (ranked by a learned ranker) for each data instance.
+
 - [WikiCite (2019)](https://github.com/CogComp/summary-cloze)
--	[DUC (2004)](https://duc.nist.gov/pubs/2004slides/duc2004.intro.pdf)
+
+Deutsch and Roth (2019) collects a new large-scale dataset from Wikipedia, with ~500k data instances. Each paragraph is a topic-focused summary of the references cited within the paragraph. The topic is an article title and section headings, while the context is a previously generated summary.
+
+-	[DUC (2004)](https://duc.nist.gov/duc2004/)
+
+Paul and James (2004) yields a high-quality MDS dataset, where document clusters are paired with multiple reference summaries written by humans. Relatively small in size, containing 50 English document clusters and 25 Arabic document clusters.
+
 -	[TAC (2011)](https://tac.nist.gov//2011/Summarization/)
+
+Owczarzak and Dang (2011) introduces another relatively small MDS dataset with fewer than 100 document clusters, used to foster research on systems that produce short, coherent summaries of text.
 
 
 ## Extractive Approach
